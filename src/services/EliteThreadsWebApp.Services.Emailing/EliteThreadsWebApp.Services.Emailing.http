@@ -1,0 +1,6 @@
+@EliteThreadsWebApp.Services.Emailing_HostAddress = http://localhost:5297
+
+GET {{EliteThreadsWebApp.Services.Emailing_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
