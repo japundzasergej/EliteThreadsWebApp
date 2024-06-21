@@ -1,5 +1,4 @@
 ﻿using EliteThreadsWebApp.Services.Promotions.Business.DTO;
-using EliteThreadsWebApp.Services.Promotions.Domain.Entities;
 using MediatR;
 
 namespace EliteThreadsWebApp.Services.Promotions.Business.Commands

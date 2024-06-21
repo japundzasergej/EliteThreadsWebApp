@@ -1,9 +1,7 @@
-﻿using System.Net.Http;
-using System.Text.Json;
+﻿using System.Text.Json;
 using AutoMapper;
 using EliteThreadsWebApp.Services.Products.Business.DTO;
 using EliteThreadsWebApp.Services.Products.Infrastructure.Repository;
-using MassTransit;
 using MediatR;
 
 namespace EliteThreadsWebApp.Services.Products.Business.Queries

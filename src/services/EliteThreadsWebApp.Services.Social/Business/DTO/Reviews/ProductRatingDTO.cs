@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace EliteThreadsWebApp.Services.Social.Business.DTO.Reviews
+﻿namespace EliteThreadsWebApp.Services.Social.Business.DTO.Reviews
 {
     public record ProductRatingDTO
     {

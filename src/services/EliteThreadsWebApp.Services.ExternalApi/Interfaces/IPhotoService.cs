@@ -1,5 +1,4 @@
-﻿using CloudinaryDotNet;
-using CloudinaryDotNet.Actions;
+﻿using CloudinaryDotNet.Actions;
 
 namespace EliteThreadsWebApp.Services.ExternalApi.Interfaces
 {

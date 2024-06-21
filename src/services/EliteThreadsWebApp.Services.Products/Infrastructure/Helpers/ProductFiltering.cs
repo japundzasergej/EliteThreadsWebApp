@@ -1,5 +1,4 @@
-﻿using CloudinaryDotNet;
-using EliteThreadsWebApp.Services.Products.Domain.Entities;
+﻿using EliteThreadsWebApp.Services.Products.Domain.Entities;
 using EliteThreadsWebApp.Services.Products.Domain.Enums;
 
 namespace EliteThreadsWebApp.Services.Products.Infrastructure.Helpers

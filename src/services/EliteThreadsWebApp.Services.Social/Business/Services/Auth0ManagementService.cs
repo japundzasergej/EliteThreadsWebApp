@@ -7,8 +7,8 @@ namespace EliteThreadsWebApp.Services.Social.Business.Services
 {
     public class Auth0ManagementService : IAuth0ManagementService
     {
-        private readonly  IHttpClientFactory _httpClientFactory;
-        private readonly  IOptions<Auth0Settings> _auth0Settings;
+        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly IOptions<Auth0Settings> _auth0Settings;
 
         public Auth0ManagementService(
             IHttpClientFactory httpClientFactory,

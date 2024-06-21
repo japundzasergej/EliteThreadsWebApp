@@ -1,6 +1,4 @@
-﻿using EliteThreadsWebApp.Services.Orders.Domain;
-
-namespace EliteThreadsWebApp.Services.Orders.Business.DTO
+﻿namespace EliteThreadsWebApp.Services.Orders.Business.DTO
 {
     public record OrderDTO
     {

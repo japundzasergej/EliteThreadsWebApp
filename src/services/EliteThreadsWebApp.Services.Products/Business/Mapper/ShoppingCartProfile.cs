@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using EliteThreadsWebApp.Contracts;
-using EliteThreadsWebApp.Contracts;
 using EliteThreadsWebApp.Services.Products.Domain.Entities;
 
 namespace EliteThreadsWebApp.Services.Products.Business.Mapper

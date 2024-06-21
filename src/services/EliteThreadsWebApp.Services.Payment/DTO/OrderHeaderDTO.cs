@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace EliteThreadsWebApp.Services.Payment.Business.DTO
+﻿namespace EliteThreadsWebApp.Services.Payment.Business.DTO
 {
     public record OrderHeaderDTO
     {

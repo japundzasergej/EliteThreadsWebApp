@@ -8,7 +8,7 @@ namespace EliteThreadsWebApp.Services.ExternalApi.Services
 {
     public class PhotoService : IPhotoService
     {
-        private readonly  Cloudinary _cloudinary;
+        private readonly Cloudinary _cloudinary;
 
         public PhotoService(IOptions<CloudinarySettings> config)
         {

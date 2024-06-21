@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using EliteThreadsWebApp.Contracts;
-using EliteThreadsWebApp.Services.Social.Business.DTO.Reviews;
 using EliteThreadsWebApp.Services.Social.Domain.Entities;
 using EliteThreadsWebApp.Services.Social.Infrastructure.Interface;
 using MassTransit;

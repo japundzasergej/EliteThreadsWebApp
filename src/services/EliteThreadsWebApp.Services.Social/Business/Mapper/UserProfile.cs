@@ -1,8 +1,6 @@
 ﻿using Auth0.ManagementApi.Models;
 using AutoMapper;
 using EliteThreadsWebApp.Services.Social.Business.DTO.User;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace EliteThreadsWebApp.Services.Social.Business.Mapper
 {

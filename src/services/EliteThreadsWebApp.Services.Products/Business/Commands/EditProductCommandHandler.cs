@@ -1,9 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
-using AutoMapper;
-using EliteThreadsWebApp.Services.Products.Business.DTO.Products;
-using EliteThreadsWebApp.Services.Products.Domain.Entities;
+﻿using AutoMapper;
 using EliteThreadsWebApp.Services.Products.Infrastructure.Repository;
-using FluentValidation;
 using MediatR;
 
 namespace EliteThreadsWebApp.Services.Products.Business.Commands

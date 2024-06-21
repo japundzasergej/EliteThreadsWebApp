@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace EliteThreadsWebApp.Services.ExternalApi.DTO
+﻿namespace EliteThreadsWebApp.Services.ExternalApi.DTO
 {
     public record CountryDTO
     {

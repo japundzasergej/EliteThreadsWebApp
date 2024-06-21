@@ -1,8 +1,6 @@
 ﻿using EliteThreadsWebApp.Services.Products.Domain.Entities;
 using EliteThreadsWebApp.Services.Promotions.Domain.Entities;
-using EliteThreadsWebApp.Services.Promotions.Infrastructure;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualBasic;
 
 namespace EliteThreadsWebApp.Services.Promotions.Infrastructure.Repository
 {

@@ -1,6 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using EliteThreadsWebApp.Services.Promotions.Domain.Entities;
 
 namespace EliteThreadsWebApp.Services.Products.Domain.Entities
 {

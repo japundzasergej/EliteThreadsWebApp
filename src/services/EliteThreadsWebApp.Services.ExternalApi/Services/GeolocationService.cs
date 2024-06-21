@@ -6,7 +6,7 @@ namespace EliteThreadsWebApp.Services.ExternalApi.Services
 {
     public class GeolocationService(IHttpClientFactory httpClientFactory) : IGeolocationService
     {
-        private readonly  JsonSerializerOptions _jsonSerializerOptions =
+        private readonly JsonSerializerOptions _jsonSerializerOptions =
             new() { PropertyNameCaseInsensitive = true };
 
         public async Task<GeolocationDTO> GetGeolocation()

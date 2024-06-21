@@ -1,6 +1,4 @@
-﻿using EliteThreadsWebApp.Contracts;
-
-namespace EliteThreadsWebApp.Contracts
+﻿namespace EliteThreadsWebApp.Contracts
 {
     public record ShoppingCartPopulatedEvent
     {

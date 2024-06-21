@@ -1,7 +1,4 @@
-﻿using Asp.Versioning;
-using Asp.Versioning.Builder;
-using EliteThreadsWebApp.Contracts;
-using EliteThreadsWebApp.Services.Promotions.Business.Commands;
+﻿using EliteThreadsWebApp.Services.Promotions.Business.Commands;
 using EliteThreadsWebApp.Services.Promotions.Business.DTO;
 using EliteThreadsWebApp.Services.Promotions.Business.Queries;
 using MediatR;

@@ -2,9 +2,7 @@
 using EliteThreadsWebApp.Services.Products.Business.DTO;
 using EliteThreadsWebApp.Services.Products.Business.DTO.Products;
 using EliteThreadsWebApp.Services.Products.Business.Queries;
-using EliteThreadsWebApp.Services.Products.Infrastructure.Helpers;
 using MediatR;
-using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EliteThreadsWebApp.Services.Products.Api

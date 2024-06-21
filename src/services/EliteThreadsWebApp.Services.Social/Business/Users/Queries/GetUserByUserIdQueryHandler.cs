@@ -1,11 +1,8 @@
 ﻿using System.Text.Json;
-using Auth0.ManagementApi.Models;
 using AutoMapper;
 using EliteThreadsWebApp.Services.Social.Business.DTO.User;
-using EliteThreadsWebApp.Services.Social.Business.Helpers;
 using EliteThreadsWebApp.Services.Social.Business.Interfaces;
 using MediatR;
-using Newtonsoft.Json;
 
 namespace EliteThreadsWebApp.Services.Social.Business.Users.Queries
 {

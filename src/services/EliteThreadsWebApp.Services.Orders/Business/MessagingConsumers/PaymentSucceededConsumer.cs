@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using EliteThreadsWebApp.Contracts;
-using EliteThreadsWebApp.Services.Orders.Domain;
 using EliteThreadsWebApp.Services.Orders.Infrastructure.Repository;
 using MassTransit;
 

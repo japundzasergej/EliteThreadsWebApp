@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using EliteThreadsWebApp.Contracts;
+﻿using EliteThreadsWebApp.Contracts;
 using EliteThreadsWebApp.Services.Promotions.Infrastructure.Repository;
 using MassTransit;
 using MediatR;

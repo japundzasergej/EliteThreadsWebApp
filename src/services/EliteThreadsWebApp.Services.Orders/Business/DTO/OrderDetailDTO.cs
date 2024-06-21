@@ -1,8 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using EliteThreadsWebApp.Services.Orders.Domain;
-
-namespace EliteThreadsWebApp.Services.Orders.Business.DTO
+﻿namespace EliteThreadsWebApp.Services.Orders.Business.DTO
 {
     public record OrderDetailDTO
     {

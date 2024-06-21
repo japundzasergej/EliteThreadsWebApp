@@ -1,16 +1,13 @@
 using System.Reflection;
 using Asp.Versioning;
 using Asp.Versioning.Builder;
-using EliteThreadsWebApp.Contracts;
 using EliteThreadsWebApp.Services.Promotions.Api;
 using EliteThreadsWebApp.Services.Promotions.Api.Middleware;
-using EliteThreadsWebApp.Services.Promotions.Business;
 using EliteThreadsWebApp.Services.Promotions.Business.Mapper;
 using EliteThreadsWebApp.Services.Promotions.Infrastructure;
 using EliteThreadsWebApp.Services.Promotions.Infrastructure.Repository;
 using FluentValidation;
 using MassTransit;
-using MassTransit.Transports.Fabric;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

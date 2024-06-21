@@ -1,7 +1,4 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-
-namespace EliteThreadsWebApp.Services.Social.Business.DTO.User
+﻿namespace EliteThreadsWebApp.Services.Social.Business.DTO.User
 {
     public record UserDTO
     {

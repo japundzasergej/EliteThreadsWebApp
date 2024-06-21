@@ -1,5 +1,4 @@
 ﻿using EliteThreadsWebApp.Services.Products.Business.Commands;
-using EliteThreadsWebApp.Services.Products.Business.DTO.Products;
 using FluentValidation;
 
 namespace EliteThreadsWebApp.Services.Products.Business.Validators

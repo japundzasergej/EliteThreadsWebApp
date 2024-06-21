@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using EliteThreadsWebApp.Services.Promotions.Business.DTO;
-using EliteThreadsWebApp.Services.Promotions.Domain.Entities;
 using EliteThreadsWebApp.Services.Promotions.Infrastructure.Repository;
 using MediatR;
 

@@ -1,6 +1,4 @@
 ﻿using AutoMapper;
-using EliteThreadsWebApp.Services.Social.Business.Helpers;
-using EliteThreadsWebApp.Services.Social.Domain.Entities;
 using EliteThreadsWebApp.Services.Social.Infrastructure.Interface;
 using MediatR;
 

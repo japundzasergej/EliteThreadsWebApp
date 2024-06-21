@@ -1,7 +1,4 @@
-﻿using System.Text.Json.Serialization;
-using Newtonsoft.Json;
-
-namespace EliteThreadsWebApp.Services.Social.Business.DTO.User
+﻿namespace EliteThreadsWebApp.Services.Social.Business.DTO.User
 {
     public record UserMetadata
     {

@@ -4,7 +4,6 @@ using EliteThreadsWebApp.Services.Emailing.DTO;
 using Microsoft.Extensions.Options;
 using SendGrid;
 using SendGrid.Helpers.Mail;
-using SendGrid.Helpers.Mail.Model;
 
 namespace EliteThreadsWebApp.Services.Emailing.SendGrid
 {
@@ -18,7 +17,7 @@ namespace EliteThreadsWebApp.Services.Emailing.SendGrid
             var email = await FetchEmail(paymentEvent.OrderHeader.UserId);
             var client = new SendGridClient(sendGridSettings.Value.ApiKey);
             var from = new EmailAddress(sendGridSettings.Value.Email, "eliteThreads");
-            var subject = "Order Placed";
+            var subject = $"Order placed with id #{paymentEvent.OrderHeader.OrderHeaderId}";
             var to = new EmailAddress(email.UserEmail, email.FullName);
             var htmlContent = await GenerateHtml(paymentEvent);
             var msg = MailHelper.CreateSingleEmail(from, to, subject, "", htmlContent);

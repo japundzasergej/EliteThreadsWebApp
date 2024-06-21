@@ -1,10 +1,6 @@
-﻿using System.Diagnostics.Metrics;
-using System.Text.Json.Serialization;
-using EliteThreadsWebApp.Services.ExternalApi.DTO;
+﻿using EliteThreadsWebApp.Services.ExternalApi.DTO;
 using EliteThreadsWebApp.Services.ExternalApi.Interfaces;
 using EliteThreadsWebApp.Services.ExternalApi.JSON;
-using Newtonsoft.Json;
-using static EliteThreadsWebApp.Services.ExternalApi.Services.GeolocationService;
 
 namespace EliteThreadsWebApp.Services.ExternalApi.Services
 {

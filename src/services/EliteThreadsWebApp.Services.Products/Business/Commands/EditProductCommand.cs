@@ -1,5 +1,4 @@
-﻿using Azure;
-using EliteThreadsWebApp.Services.Products.Business.DTO.Products;
+﻿using EliteThreadsWebApp.Services.Products.Business.DTO.Products;
 using MediatR;
 
 namespace EliteThreadsWebApp.Services.Products.Business.Commands
