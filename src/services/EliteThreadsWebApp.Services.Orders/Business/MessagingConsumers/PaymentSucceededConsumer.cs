@@ -19,11 +19,19 @@ namespace EliteThreadsWebApp.Services.Orders.Business.MessagingConsumers
             await orderRepository.UpdatePaymentStatusAsync(message.OrderHeaderId);
             var order = await orderRepository.GetOrderAsync(message.OrderHeaderId);
 
-            var subtractEvent = new SubtractStockFromProductEvent { ProductIds =  [ ] };
+            var subtractEvent = new SubtractStockFromProductEvent { SubtractedProducts =  [ ] };
 
             foreach (var detail in order.OrderDetails)
             {
-                subtractEvent.ProductIds.Add(detail.ProductId);
+                subtractEvent
+                    .SubtractedProducts
+                    .Add(
+                        new SubtractedProduct
+                        {
+                            ProductId = detail.ProductId,
+                            Quantity = detail.Quantity
+                        }
+                    );
             }
 
             await publishEndpoint.Publish(

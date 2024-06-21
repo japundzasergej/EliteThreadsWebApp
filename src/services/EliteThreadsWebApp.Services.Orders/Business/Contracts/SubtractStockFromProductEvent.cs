@@ -2,6 +2,6 @@
 {
     public record SubtractStockFromProductEvent
     {
-        public List<int> ProductIds { get; init; }
+        public List<SubtractedProduct> SubtractedProducts { get; init; }
     }
 }

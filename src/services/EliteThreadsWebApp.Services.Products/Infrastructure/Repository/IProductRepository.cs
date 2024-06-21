@@ -1,4 +1,5 @@
-﻿using EliteThreadsWebApp.Services.Products.Domain.Entities;
+﻿using EliteThreadsWebApp.Services.Products.Domain;
+using EliteThreadsWebApp.Services.Products.Domain.Entities;
 using EliteThreadsWebApp.Services.Products.Infrastructure.Helpers;
 
 namespace EliteThreadsWebApp.Services.Products.Infrastructure.Repository
@@ -22,6 +23,6 @@ namespace EliteThreadsWebApp.Services.Products.Infrastructure.Repository
         Task OnDiscountDeletedAsync(params int[] productIds);
         Task OnCollectionDeletedAsync(params int[] productIds);
         Task OnRatingChangedAsync(int productId, float rating, int totalRatingCount);
-        Task OnSuccessfulPayment(params int[] productIds);
+        Task OnSuccessfulPayment(IEnumerable<SubtractQuantityFromProduct> subtractQuantities);
     }
 }

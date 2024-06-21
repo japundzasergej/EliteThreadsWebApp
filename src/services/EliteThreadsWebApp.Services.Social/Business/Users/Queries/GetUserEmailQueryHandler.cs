@@ -18,7 +18,7 @@ namespace EliteThreadsWebApp.Services.Social.Business.Users.Queries
             return new UserEmailDTO()
             {
                 UserEmail = user.Email,
-                FullName = user.UserMetadata.FirstName + user.UserMetadata.LastName
+                FullName = $"{user.UserMetadata.FirstName} {user.UserMetadata.LastName}"
             };
         }
     }

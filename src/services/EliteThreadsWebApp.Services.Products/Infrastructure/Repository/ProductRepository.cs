@@ -1,4 +1,5 @@
-﻿using EliteThreadsWebApp.Services.Products.Domain.Entities;
+﻿using EliteThreadsWebApp.Services.Products.Domain;
+using EliteThreadsWebApp.Services.Products.Domain.Entities;
 using EliteThreadsWebApp.Services.Products.Infrastructure.Helpers;
 using Microsoft.EntityFrameworkCore;
 
@@ -190,20 +191,22 @@ namespace EliteThreadsWebApp.Services.Products.Infrastructure.Repository
             return result > 0;
         }
 
-        public async Task OnSuccessfulPayment(params int[] productIds)
+        public async Task OnSuccessfulPayment(
+            IEnumerable<SubtractQuantityFromProduct> subtractQuantities
+        )
         {
-            foreach (var productId in productIds)
+            foreach (var product in subtractQuantities)
             {
                 var productFromDb =
-                    await db.Products.FirstOrDefaultAsync(p => p.ProductId == productId)
+                    await db.Products.FirstOrDefaultAsync(p => p.ProductId == product.ProductId)
                     ?? throw new InvalidDataException("Object doesn't exist");
-                productFromDb.ProductsLeft--;
-                if (productFromDb.ProductsLeft == 0)
+                productFromDb.ProductsLeft -= product.Quantity;
+                if (productFromDb.ProductsLeft <= 0)
                 {
                     productFromDb.IsInStock = false;
                 }
-                await db.SaveChangesAsync();
             }
+            await db.SaveChangesAsync();
         }
     }
 }

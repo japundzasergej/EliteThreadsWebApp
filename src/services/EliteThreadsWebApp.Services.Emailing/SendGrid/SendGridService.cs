@@ -33,7 +33,10 @@ namespace EliteThreadsWebApp.Services.Emailing.SendGrid
             var response = await client.GetAsync(builder.Uri);
             response.EnsureSuccessStatusCode();
             var content = await response.Content.ReadAsStringAsync();
-            return JsonSerializer.Deserialize<UserEmailDTO>(content);
+            return JsonSerializer.Deserialize<UserEmailDTO>(
+                content,
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true }
+            );
         }
 
         private async Task<string> GenerateHtml(AfterSuccessfulPaymentEvent paymentEvent)
