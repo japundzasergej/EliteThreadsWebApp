@@ -66,9 +66,7 @@ namespace EliteThreadsWebApp.Services.Payment.Stripe
                         {
                             PriceData = new SessionLineItemPriceDataOptions
                             {
-                                UnitAmount = Convert.ToInt64(
-                                    (orderDetails.IndividualPrice / orderDetails.Quantity) * 100
-                                ),
+                                UnitAmount = Convert.ToInt64((orderDetails.IndividualPrice) * 100),
                                 Currency = "EUR",
                                 ProductData = new SessionLineItemPriceDataProductDataOptions
                                 {

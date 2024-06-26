@@ -13,5 +13,6 @@ namespace EliteThreadsWebApp.Services.ShoppingCart.Domain
         public double? PriceAfterDiscount { get; init; }
         public bool HasDiscount { get; init; }
         public int DiscountAmount { get; init; }
+        public int ProductsLeft { get; init; }
     }
 }

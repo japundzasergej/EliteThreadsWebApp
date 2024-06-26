@@ -8,7 +8,7 @@ namespace EliteThreadsWebApp.Services.Social.Business.Reviews.Validators
         public AddRatingCommandValidator()
         {
             RuleFor(command => command.DTO).NotEmpty();
-            RuleFor(command => command.DTO.UserInput).NotEmpty().InclusiveBetween(1, 5);
+            RuleFor(command => command.DTO.UserInput).NotEmpty().InclusiveBetween(0.5f, 5f);
             RuleFor(command => command.DTO.UserId).NotEmpty();
         }
     }

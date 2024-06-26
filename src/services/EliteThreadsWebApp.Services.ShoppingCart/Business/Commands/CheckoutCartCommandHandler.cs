@@ -38,9 +38,9 @@ namespace EliteThreadsWebApp.Services.ShoppingCart.Business.Commands
                                     CalculateDiscount.Calculate(
                                         detail.Product.Price,
                                         detail.Product.DiscountAmount
-                                    ) * detail.Quantity
+                                    )
                                 )
-                                : (detail.Product.Price * detail.Quantity),
+                                : (detail.Product.Price),
                             OrderHeaderId = orderPlacedEvent.OrderHeader.OrderHeaderId,
                             ProductId = detail.Product.ProductId,
                             OrderProduct = mapper.Map<OrderProduct>(detail.Product),

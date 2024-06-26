@@ -57,9 +57,18 @@ namespace EliteThreadsWebApp.Services.Emailing.SendGrid
                 var productName = detail.OrderProduct.ProductName;
                 var price = detail.IndividualPrice;
                 var quantity = detail.Quantity;
+                var selectedColor = detail.SelectedColor;
+                var selectedSize = detail.SelectedSize;
 
                 string product =
-                    $"<td style=\"width: 50%; background-color: #F1F1F1; padding: 20px;\">\r\n    <img src=\"{image}\" alt=\"{productName}\" style=\"max-width: 100%; height: auto;\">\r\n    <h3 style=\"margin-top: 10px; font-size: 16px; color: #333333; font-weight: bold;\">{productName}</h3>\r\n    <p style=\"margin: 0; font-size: 14px; color: #555555;\">{price}€</p>\r\n<p style=\"margin: 0; font-size: 14px; color: #555555;\">{quantity} qty</p>\r\n</td>";
+                    $"<td style=\"width: 50%; background-color: #F1F1F1; padding: 20px;\"> \r\n"
+                    + $"  <img src=\"{image}\" alt=\"{productName}\" style=\"max-width: 100%; height: auto;\"> \r\n"
+                    + $"  <h3 style=\"margin-top: 10px; font-size: 16px; color: #333333; font-weight: bold;\">{productName}</h3> \r\n"
+                    + $"  <p style=\"margin: 0; font-size: 18px; color: #555555;\">{price}€</p> \r\n"
+                    + $"  <p style=\"margin: 0; font-size: 18px; color: #555555;\">{quantity} qty</p> \r\n"
+                    + $"  <p style=\"margin: 0; font-size: 18px; color: #555555;\">Selected color: {selectedColor}</p> \r\n"
+                    + $"  <p style=\"margin: 0; font-size: 18px; color: #555555;\">Selected size: {Enum.GetName(typeof(Size), selectedSize)}</p> \r\n"
+                    + $"</td>";
                 productsSection += product;
             }
 
